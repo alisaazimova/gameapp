@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 on: [push]
 jobs:
   container:
-    runs-on: ['self-hosted', 'actions-runner']
+    runs-on: ['self-hosted']
     container:
       image: ubuntu
     steps:

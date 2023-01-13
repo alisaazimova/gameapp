@@ -1,8 +1,8 @@
 name: GitHub Actions Demo
 on: [push]
-# env:
-#   ACTIONS_RUNNER_POD_NAME: example-runner
-#   ACTIONS_RUNNER_REQUIRE_JOB_CONTAINER: True
+env:
+  ACTIONS_RUNNER_POD_NAME: example-runner
+  ACTIONS_RUNNER_REQUIRE_JOB_CONTAINER: True
 jobs:
   container:
     runs-on: ['self-hosted']

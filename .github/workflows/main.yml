@@ -8,6 +8,9 @@ jobs:
     runs-on: ['self-hosted']
     container:
       image: ubuntu
+      env:
+        ACTIONS_RUNNER_POD_NAME: example-runner
+        ACTIONS_RUNNER_REQUIRE_JOB_CONTAINER: True
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
